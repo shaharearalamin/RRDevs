@@ -1,0 +1,20 @@
+// default transtion mixin 
+@mixin d-transition($property: all, $duration: 0.3s, $timing-function: ease-in-out, $delay: 0s) {
+    transition: $property $duration $timing-function $delay;
+  }
+  
+// placeholder input
+@mixin tp-placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
