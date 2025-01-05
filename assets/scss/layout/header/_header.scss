@@ -93,5 +93,13 @@
   &-icon-text{
     padding-right: 95px;
      white-space: nowrap;
+     & h5 {
+        & a {
+            @include d-transition;
+            &:hover{
+                color: var(--rt-secondary-color);
+            }
+        }
+     }
   }
 }

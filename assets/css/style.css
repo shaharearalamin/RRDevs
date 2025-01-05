@@ -6973,6 +6973,12 @@ textarea {
   padding-right: 95px;
   white-space: nowrap;
 }
+.rt-header-icon-text h5 a {
+  transition: all 0.3s ease-in-out 0s;
+}
+.rt-header-icon-text h5 a:hover {
+  color: var(--rt-secondary-color);
+}
 
 .tp-hero-title {
   color: #FFF;
