@@ -1,8 +1,20 @@
-@use '../utils' as *;
+@use "../utils" as *;
 
-.tp-section-title {
-	font-size: 60px;
-	&-white{
-		color: #fff;
-	}
+.rt__section-title {
+  & h6 {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+	margin: 0;
+	padding-right: 14px;
+  }
+  & h1 {
+    & span {
+      color: #16171a;
+    }
+  }
+  & p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+  }
 }
