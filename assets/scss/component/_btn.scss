@@ -1,33 +1,28 @@
-@use '../utils' as *;
+@use "../utils" as *;
 
-.tp-btn {
-	background: var(--tp-theme-color);
-	padding: 16px 45px;
-	font-size: 18px;
-	font-family: var(--tp-font-heading);
-	border-radius: 5px;
-	display: inline-block;
+.rt__btn {
+  &-secondary {
+	white-space: nowrap;
+	background: var(--rt-secondary-color);
+    border-radius: 150px;
+    padding: 20px 30px;
 	color: #fff;
-	&-sec {
-		background: var(--tp-theme-color-2);
-		padding: 16px 45px;
-		font-size: 18px;
-		font-family: var(--tp-font-heading);
-		border-radius: 5px;
-		display: inline-block;
-		&-lg{
-			padding: 21px 48px;
-		}
+	position: relative;
+	& i {
+		margin-left: 10px;
+		font-weight: 500;
 	}
-	&-circle{
-		font-family: var(--tp-font-heading);
-		font-size: 60px;
-		color: #fff;
-		opacity: 0.3;
-		border: 2px solid rgba(255, 255, 255, 0.2);
-		padding: 48px 75px;
-		display: inline-block;
-		line-height: 1;
-		border-radius: 100%;
-	}
+	// &::after{
+	// 	content: "";
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	background-color: red;
+	// 	border-radius: inherit;
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: 0;
+	// 	z-index: -1;
+	//   }
+  }
+
 }
