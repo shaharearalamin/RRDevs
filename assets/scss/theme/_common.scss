@@ -51,6 +51,9 @@
 .br-24{
 	border-radius: 24px;
 }
+.br-50{
+	border-radius: 50px;
+}
 
 .bg-primary-color{
 	background-color: var(--rt-primary-color);
@@ -74,4 +77,7 @@
 .section-space-padding{
 	padding-top: 120px ;
 	padding-bottom: 120px ;
+}
+.br-primary-color{
+	border: 1px solid var(--rt-primary-color);
 }

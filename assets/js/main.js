@@ -27,4 +27,17 @@
       disableOnInteraction: true,
     },
   });
+
+  // service slider 
+  var swiper = new Swiper(".rt__service-slider", {
+    slidesPerView: 3,
+    loop:true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".rt__service-btn-next",
+      prevEl: ".rt__service-btn-prev",
+    },
+  });
+
+
 })(jQuery);

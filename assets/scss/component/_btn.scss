@@ -26,3 +26,14 @@
   }
 
 }
+
+.slider-btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+	& i {
+		color: var(--rt-primary-color);
+	}
+}
