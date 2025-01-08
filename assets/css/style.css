@@ -8852,7 +8852,7 @@ textarea {
 }
 .rt__tes-slider-btn {
   bottom: 70px;
-  right: 0px;
+  right: -40px;
   z-index: 99;
 }
 .rt__tes-img span {
