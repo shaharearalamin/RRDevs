@@ -1,0 +1,30 @@
+@use "../../utils" as *;
+
+.rt__discount {
+  &-wrapper {
+    padding-top: 330px;
+    padding-bottom: 330px;
+  }
+  &-icon {
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    padding: 50px;
+    & span {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(109, 109, 109, 0.3);
+    }
+    & button {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 214%;
+      color: #034833;
+      & i {
+        margin-left: 5px;
+      }
+    }
+  }
+}

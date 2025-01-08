@@ -1,11 +1,6 @@
 @use "../../utils" as *;
 
 .rt__service {
-  &-wrapper {
-    margin: auto 60px;
-    border-radius: 50px;
-    overflow: hidden;
-  }
   &-shape {
     top: 0;
     right: 0;

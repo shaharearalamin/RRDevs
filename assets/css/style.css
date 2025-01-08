@@ -127,6 +127,7 @@
 :root {
   --rt-primary-color: #034833;
   --rt-secondary-color: #83CD20;
+  --rt-secondary-color-50: #f1f5eb;
   --rt-heading-color: #034833;
   --rt-paragraph-color: #727272;
   --rt-theme-nblue: #001C52;
@@ -410,6 +411,13 @@ textarea {
   max-width: 100%;
 }
 
+.margin-lf-rt {
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
 .fix {
   overflow: hidden;
 }
@@ -466,6 +474,10 @@ textarea {
 
 .bg-secondary-color {
   background-color: var(--rt-secondary-color);
+}
+
+.bg-secondary-color-50 {
+  background-color: var(--rt-secondary-color-50);
 }
 
 .tp-slide-transtion {
@@ -8682,54 +8694,31 @@ textarea {
   padding-left: 16px;
 }
 
-.tp-newsletter-margin {
-  margin-top: -110px;
+.rt__discount-wrapper {
+  padding-top: 330px;
+  padding-bottom: 330px;
 }
-.tp-newsletter-bg {
-  padding: 80px;
-  border-radius: 20px;
+.rt__discount-icon {
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  padding: 50px;
 }
-.tp-newsletter-box form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.rt__discount-icon span {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(109, 109, 109, 0.3);
 }
-.tp-newsletter-box input {
-  border-color: #fff;
-  color: #fff;
+.rt__discount-icon button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 214%;
+  color: #034833;
 }
-.tp-newsletter-box input:focus {
-  border-color: #fff;
-}
-.tp-newsletter-box input::-webkit-input-placeholder {
-  color: #fff;
-}
-.tp-newsletter-box input:-moz-placeholder {
-  color: #fff;
-}
-.tp-newsletter-box input::-moz-placeholder {
-  color: #fff;
-}
-.tp-newsletter-box input:-ms-input-placeholder {
-  color: #fff;
-}
-.tp-newsletter-input {
-  width: calc(100% - 205px);
-}
-.tp-newsletter-input img {
-  position: absolute;
-  right: 20px;
-  top: 22px;
-}
-.tp-newsletter-back {
-  color: #FFF;
-  font-size: 100px;
-  opacity: 0.1;
-  position: absolute;
-  left: 83px;
-  bottom: -23px;
-  line-height: 1;
-  margin: 0;
+.rt__discount-icon button i {
+  margin-left: 5px;
 }
 
 .rt__cta-play-img {
@@ -8801,11 +8790,6 @@ textarea {
   border-radius: 20px;
 }
 
-.rt__service-wrapper {
-  margin: auto 60px;
-  border-radius: 50px;
-  overflow: hidden;
-}
 .rt__service-shape {
   top: 0;
   right: 0;
@@ -8889,6 +8873,28 @@ textarea {
 .tp-testimonial-shape-thumb-2 {
   right: 0px;
   top: 34px;
+}
+
+.rt-branding-slider .swiper-wrapper {
+  transition-timing-function: linear;
+}
+.rt-branding-slider .swiper-wrapper .swiper-slide {
+  width: auto;
+  padding: 0px 78px;
+}
+
+.rt-branding-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto;
 }
 
 .demo h1 {

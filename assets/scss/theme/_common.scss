@@ -12,8 +12,14 @@
 	}
 }
 
+.margin-lf-rt {
+margin-left: 60px;
+margin-right: 60px;
+border-radius: 50px;
+overflow: hidden;
+}
 .fix {
-    overflow:hidden
+    overflow:hidden;
 }
 .clear{
     clear: both;
@@ -60,6 +66,9 @@
 }
 .bg-secondary-color{
 	background-color: var(--rt-secondary-color);
+}
+.bg-secondary-color-50{
+	background-color: var(--rt-secondary-color-50);
 }
 
 .tp-slide-transtion {

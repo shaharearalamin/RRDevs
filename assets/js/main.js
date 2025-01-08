@@ -13,7 +13,7 @@
     resistanceRatio: 0.5,
   });
 
-  // brand slider
+  // footer brand slider
   var swiper = new Swiper(".tp-brand-top-active", {
     slidesPerView: "auto",
     spaceBetween: 80,
@@ -36,6 +36,22 @@
     navigation: {
       nextEl: ".rt__service-btn-next",
       prevEl: ".rt__service-btn-prev",
+    },
+  });
+
+  
+  // branding slider
+  var swiper = new Swiper(".rt-branding-slider", {
+    slidesPerView: "auto",
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+    keyboard: {
+      enabled: false,
     },
   });
 

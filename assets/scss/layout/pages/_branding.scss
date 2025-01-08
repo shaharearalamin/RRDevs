@@ -1,0 +1,23 @@
+.rt-branding-slider {
+  & .swiper-wrapper {
+    transition-timing-function: linear;
+    & .swiper-slide {
+      width: auto;
+      padding: 0px 78px;
+    }
+  }
+}
+
+.rt-branding-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+}
