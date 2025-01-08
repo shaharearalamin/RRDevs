@@ -1,1 +1,42 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.rt__contact {
+    &-area{
+        margin-top: -210px;
+    }
+  &-col-wrapper-1 {
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    & form {
+      display: flex;
+      align-items: center;
+      & input {
+        width: 100%;
+      }
+      & button {
+        border: 1px solid rgb(255, 255, 255);
+        padding: 13px 20px;
+        border-radius: 150px;
+        background-color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--rt-primary-color);
+        text-wrap: nowrap;
+      }
+    }
+  }
+  &-shape-1{
+    top: 50px;
+    left: 0;
+  }
+  &-col-wrapper-2{
+    & span {
+        & img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+  }
+}

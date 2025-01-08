@@ -306,53 +306,12 @@ input[type=number],
 input[type=password],
 input[type=url],
 textarea {
-  outline: none;
   background-color: transparent;
-  height: 56px;
-  width: 100%;
-  line-height: 56px;
-  font-size: 14px;
-  color: var(--tp-common-black);
-  border: 0;
-  border-bottom: 1px solid #57595C;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-input[type=text]::-webkit-input-placeholder,
-input[type=email]::-webkit-input-placeholder,
-input[type=tel]::-webkit-input-placeholder,
-input[type=number]::-webkit-input-placeholder,
-input[type=password]::-webkit-input-placeholder,
-input[type=url]::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #57595C;
-}
-input[type=text]:-moz-placeholder,
-input[type=email]:-moz-placeholder,
-input[type=tel]:-moz-placeholder,
-input[type=number]:-moz-placeholder,
-input[type=password]:-moz-placeholder,
-input[type=url]:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #57595C;
-}
-input[type=text]::-moz-placeholder,
-input[type=email]::-moz-placeholder,
-input[type=tel]::-moz-placeholder,
-input[type=number]::-moz-placeholder,
-input[type=password]::-moz-placeholder,
-input[type=url]::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #57595C;
-}
-input[type=text]:-ms-input-placeholder,
-input[type=email]:-ms-input-placeholder,
-input[type=tel]:-ms-input-placeholder,
-input[type=number]:-ms-input-placeholder,
-input[type=password]:-ms-input-placeholder,
-input[type=url]:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #57595C;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 26px;
+  border-radius: 150px;
+  border: 1px solid rgb(255, 255, 255);
 }
 input[type=text]:focus,
 input[type=email]:focus,
@@ -361,7 +320,7 @@ input[type=number]:focus,
 input[type=password]:focus,
 input[type=url]:focus,
 textarea:focus {
-  border-color: var(--tp-common-black);
+  outline: none;
 }
 input[type=text]:focus::placeholder,
 input[type=email]:focus::placeholder,
@@ -393,13 +352,13 @@ textarea {
 
 *::-moz-placeholder {
   color: var(--tp-common-black);
-  font-size: 14px;
+  font-size: 16px;
   opacity: 1;
 }
 
 *::placeholder {
   color: var(--tp-common-black);
-  font-size: 14px;
+  font-size: 16px;
   opacity: 1;
 }
 
@@ -8719,6 +8678,41 @@ textarea {
 }
 .rt__discount-icon button i {
   margin-left: 5px;
+}
+
+.rt__contact-area {
+  margin-top: -210px;
+}
+.rt__contact-col-wrapper-1 {
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.rt__contact-col-wrapper-1 form {
+  display: flex;
+  align-items: center;
+}
+.rt__contact-col-wrapper-1 form input {
+  width: 100%;
+}
+.rt__contact-col-wrapper-1 form button {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 13px 20px;
+  border-radius: 150px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--rt-primary-color);
+  text-wrap: nowrap;
+}
+.rt__contact-shape-1 {
+  top: 50px;
+  left: 0;
+}
+.rt__contact-col-wrapper-2 span img {
+  max-width: 100%;
+  display: block;
 }
 
 .rt__cta-play-img {
