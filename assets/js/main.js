@@ -55,5 +55,18 @@
     },
   });
 
+  // testimonials slider 
+  var swiper = new Swiper(".rt__tes-slider", {
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".rt__tes-btn-next",
+      prevEl: ".rt__tes-btn-prev",
+    },
+  });
 
 })(jQuery);
