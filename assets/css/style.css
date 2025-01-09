@@ -8889,6 +8889,43 @@ textarea {
   width: auto;
 }
 
+.rt__category-col-wrapper-1 {
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+}
+.rt__category-tabs ul li .active span {
+  opacity: 1;
+}
+.rt__category-tabs ul li a {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 136%;
+  color: var(--rt-primary-color);
+}
+.rt__category-tabs ul li a span {
+  opacity: 0.3;
+}
+.rt__category-tabs ul li a i {
+  font-weight: 900;
+  font-size: 14px;
+  color: #034833;
+}
+.rt__category-tabs-img span {
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--rt-secondary-color);
+}
+.rt__category-tabs-img span img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .demo h1 {
   font-size: 100px;
   text-transform: uppercase;
