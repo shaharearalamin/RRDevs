@@ -1,0 +1,34 @@
+@use "../../utils" as *;
+
+.rt__overview {
+    &-wrapper{
+        z-index: 2;
+    }
+  &-card {
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    &-icon {
+      width: 160px;
+      height: 168px;
+      background-color: var(--rt-secondary-color);
+      display: grid;
+      place-items: center;
+      border-radius: 20px;
+      position: relative;
+      & h2 {
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff ;
+      }
+    }
+  }
+  &-shape-1{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .05;
+  }
+}
