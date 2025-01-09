@@ -9042,6 +9042,40 @@ textarea {
   place-items: center;
 }
 
+.rt__contactForm-img span img {
+  max-width: 100%;
+}
+
+.rt__trip-area {
+  margin-top: -200px;
+}
+.rt__trip-wrapper {
+  z-index: 2;
+}
+.rt__trip-img {
+  margin-top: -50px;
+}
+.rt__trip-shape {
+  top: 15%;
+  left: 30%;
+  z-index: -1;
+}
+
+.rt__trip-area {
+  margin-top: -200px;
+}
+.rt__trip-wrapper {
+  z-index: 2;
+}
+.rt__trip-img {
+  margin-top: -50px;
+}
+.rt__trip-shape {
+  top: 15%;
+  left: 30%;
+  z-index: -1;
+}
+
 .demo h1 {
   font-size: 100px;
   text-transform: uppercase;

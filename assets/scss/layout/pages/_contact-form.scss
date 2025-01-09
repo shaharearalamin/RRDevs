@@ -1,0 +1,28 @@
+@use "../../utils" as *;
+
+.rt__contactForm {
+  &-img {
+    & span {
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.rt__trip {
+    &-area{
+        margin-top: -200px;
+    }
+  &-wrapper {
+    z-index: 2;
+  }
+  &-img {
+    margin-top: -50px;
+  }
+  &-shape {
+    top: 15%;
+    left: 30%;
+    z-index: -1;
+  }
+}
