@@ -69,4 +69,37 @@
     },
   });
 
+
+  //  blog
+  var swiper = new Swiper(".rt-blog-slider", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".rt-blog-next-btn",
+      prevEl: ".rt-blog-prev-btn",
+    },
+    breakpoints: {
+      350: {
+        slidesPerView: 1,
+        // spaceBetween: 0,
+      },
+      576: {
+        slidesPerView: 2,
+        // spaceBetween: 0,
+      },
+      992: {
+        slidesPerView: 3,
+        // spaceBetween: 40,
+      },
+    },
+  });
+
 })(jQuery);

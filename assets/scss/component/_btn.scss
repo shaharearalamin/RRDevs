@@ -2,38 +2,39 @@
 
 .rt__btn {
   &-secondary {
-	white-space: nowrap;
-	background: var(--rt-secondary-color);
+    white-space: nowrap;
+    background: var(--rt-secondary-color);
     border-radius: 150px;
     padding: 20px 30px;
-	color: #fff;
-	width: auto;
-	& i {
-		margin-left: 10px;
-		font-weight: 500;
-	}
-	// &::after{
-	// 	content: "";
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	background-color: red;
-	// 	border-radius: inherit;
-	// 	position: absolute;
-	// 	left: 0;
-	// 	top: 0;
-	// 	z-index: -1;
-	//   }
+    color: #fff;
+    width: auto;
+    & i {
+      margin-left: 10px;
+      font-weight: 500;
+    }
   }
-
+  &-transparent {
+    white-space: nowrap;
+    background: transparent;
+    border: 1px solid var(--rt-secondary-color);
+    border-radius: 150px;
+    padding: 20px 30px;
+    color: var(--rt-primary-color);
+    width: auto;
+    & i {
+      margin-left: 10px;
+      font-weight: 500;
+    }
+  }
 }
 
-.slider-btn{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-	& i {
-		color: var(--rt-primary-color);
-	}
+.slider-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  & i {
+    color: var(--rt-primary-color);
+  }
 }
