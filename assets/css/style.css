@@ -182,6 +182,15 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
+  transition: all 0.3s ease-in-out 0s;
+}
+.slider-btn:hover {
+  background-color: var(--rt-secondary-color);
+  color: #fff;
+  border: none;
+}
+.slider-btn:hover i {
+  color: #fff;
 }
 .slider-btn i {
   color: var(--rt-primary-color);
@@ -9050,9 +9059,23 @@ textarea {
   flex-direction: column;
   gap: 30px;
   background-color: #fff;
+  border: 1px solid rgb(239, 239, 239);
+  transition: all 0.3s ease-in-out 0s;
+}
+.rt__service-slide:hover {
+  border: 1px solid var(--rt-secondary-color);
+}
+.rt__service-slide:hover span img {
+  animation: hoverimg 0.3s ease-in-out;
 }
 .rt__service-slide h4 {
   margin: 0;
+}
+.rt__service-slide h4 a {
+  transition: all 0.3s ease-in-out 0s;
+}
+.rt__service-slide h4 a:hover {
+  color: var(--rt-secondary-color);
 }
 .rt__service-slide span {
   width: 80px;
@@ -9069,6 +9092,32 @@ textarea {
   right: 0;
 }
 
+@keyframes hoverimg {
+  0% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  20% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  40% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  60% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  80% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
 .rt__tes-slider {
   margin-right: -100px;
   border-radius: 20px;

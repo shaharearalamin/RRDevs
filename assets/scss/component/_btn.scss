@@ -40,6 +40,15 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
+  @include d-transition;
+  &:hover{
+    background-color: var(--rt-secondary-color);
+    color: #fff;
+    border: none;
+    & i {
+      color: #fff;
+    }
+  }
   & i {
     color: var(--rt-primary-color);
   }
