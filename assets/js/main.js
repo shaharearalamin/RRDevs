@@ -1,12 +1,10 @@
 (function ($) {
   "use strict";
 
-
-  // magnificPopup start 
-  $('.popup-hero-vedio').magnificPopup({
-    type: 'iframe'
+  // magnificPopup start
+  $(".popup-hero-vedio").magnificPopup({
+    type: "iframe",
   });
-
 
   // hero slider
   var swiper = new Swiper(".rt__hero-slider", {
@@ -64,15 +62,12 @@
     breakpoints: {
       350: {
         slidesPerView: 1,
-        // spaceBetween: 0,
       },
       576: {
         slidesPerView: 2,
-        // spaceBetween: 0,
       },
       992: {
         slidesPerView: 3,
-        // spaceBetween: 40,
       },
     },
   });
@@ -107,7 +102,7 @@
     },
   });
 
-  // header sticky 
+  // header sticky
   let headersticky = document.querySelector("header");
   window.onscroll = function () {
     let scrollNav = window.scrollY;
@@ -117,5 +112,4 @@
       headersticky.classList.remove("headersticky");
     }
   };
-
 })(jQuery);

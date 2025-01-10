@@ -2,13 +2,29 @@
 
 .rt__discount {
   &-wrapper {
-    padding-top: 330px;
+    padding-top: 120px;
     padding-bottom: 330px;
   }
   &-icon {
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
     background: #fff;
     padding: 50px;
+    & h4 {
+      & a {
+        @include d-transition;
+        &:hover{
+          color: var(--rt-secondary-color);
+        }
+      }
+    }
+    &:hover{
+      & span {
+        border: 1px solid var(--rt-secondary-color);
+        & img {
+          animation: hoverimg1 .3s ease-in-out;
+        }
+      }
+    }
     & span {
       width: 100px;
       height: 100px;
@@ -16,15 +32,50 @@
       display: grid;
       place-items: center;
       border: 1px solid rgba(109, 109, 109, 0.3);
+      @include d-transition;
+     
     }
     & button {
       font-weight: 600;
       font-size: 14px;
       line-height: 214%;
       color: #034833;
+      @include d-transition;
+      &:hover{
+        color: var(--rt-secondary-color);
+      }
       & i {
         margin-left: 5px;
       }
     }
+  }
+}
+
+
+
+@keyframes hoverimg1 {
+  0% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  20% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  40% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  60% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  80% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
