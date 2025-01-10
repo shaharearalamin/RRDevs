@@ -13,20 +13,6 @@
     resistanceRatio: 0.5,
   });
 
-  // footer brand slider
-  var swiper = new Swiper(".tp-brand-top-active", {
-    slidesPerView: "auto",
-    spaceBetween: 80,
-    freemode: true,
-    centeredSlides: true,
-    loop: true,
-    speed: 4000,
-    allowTouchMove: false,
-    autoplay: {
-      delay: 1,
-      disableOnInteraction: true,
-    },
-  });
 
   // service slider 
   var swiper = new Swiper(".rt__service-slider", {
@@ -40,20 +26,7 @@
   });
 
   
-  // branding slider
-  var swiper = new Swiper(".rt-branding-slider", {
-    slidesPerView: "auto",
-    spaceBetween: 0,
-    loop: true,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-    speed: 2000,
-    keyboard: {
-      enabled: false,
-    },
-  });
+
 
   // testimonials slider 
   var swiper = new Swiper(".rt__tes-slider", {
@@ -99,6 +72,36 @@
         slidesPerView: 3,
         // spaceBetween: 40,
       },
+    },
+  });
+
+   // branding slider top 
+   var swiper = new Swiper(".rt-branding-slider", {
+    slidesPerView: "auto",
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+    keyboard: {
+      enabled: false,
+    },
+  });
+
+  // footer brand slider
+  var swiper = new Swiper(".tp-brand-top-active", {
+    slidesPerView: "auto",
+    spaceBetween: 40,
+    freemode: true,
+    centeredSlides: true,
+    loop: true,
+    speed: 4000,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true,
     },
   });
 
