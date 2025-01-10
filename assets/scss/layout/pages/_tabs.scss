@@ -13,11 +13,24 @@
     }
   }
   &-btn-content {
+    &:hover {
+      & span {
+        & img {
+          animation: hoverimg3 0.3s ease-in-out;
+        }
+      }
+    }
     @media #{$xs} {
       padding: 16px;
     }
     & h4 {
       font-size: 22px;
+      & a {
+        @include d-transition;
+        &:hover {
+          color: var(--rt-secondary-color);
+        }
+      }
       @media #{$xs} {
         font-size: 14px;
         padding: 0;
@@ -29,7 +42,7 @@
     width: 100%;
     height: 100%;
     display: block;
-    &-wrapper{
+    &-wrapper {
       & span {
         & img {
           width: 90%;
@@ -69,7 +82,7 @@
       padding: 20px;
     }
   }
-  &-customize{
+  &-customize {
     & span {
       width: 80px;
       height: 80px;
@@ -78,5 +91,32 @@
       display: grid;
       place-items: center;
     }
+  }
+}
+
+@keyframes hoverimg3 {
+  0% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  20% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  40% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  60% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  80% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }

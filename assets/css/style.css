@@ -9359,6 +9359,9 @@ textarea {
     border-radius: 30px;
   }
 }
+.rt-tabs-btn-content:hover span img {
+  animation: hoverimg3 0.3s ease-in-out;
+}
 @media (max-width: 575px) {
   .rt-tabs-btn-content {
     padding: 16px;
@@ -9366,6 +9369,12 @@ textarea {
 }
 .rt-tabs-btn-content h4 {
   font-size: 22px;
+}
+.rt-tabs-btn-content h4 a {
+  transition: all 0.3s ease-in-out 0s;
+}
+.rt-tabs-btn-content h4 a:hover {
+  color: var(--rt-secondary-color);
 }
 @media (max-width: 575px) {
   .rt-tabs-btn-content h4 {
@@ -9431,6 +9440,32 @@ textarea {
   place-items: center;
 }
 
+@keyframes hoverimg3 {
+  0% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  20% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  40% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  60% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  80% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
 .rt__contactForm-img span img {
   max-width: 100%;
 }
