@@ -7,6 +7,11 @@
   &-card {
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
     background: #fff;
+    &:hover{
+      & span{
+        animation: hoverimg2 .3s ease-in-out;
+      }
+    }
     &-icon {
       width: 160px;
       height: 168px;
@@ -30,5 +35,34 @@
     left: 0;
     z-index: -1;
     opacity: .05;
+  }
+}
+
+
+
+@keyframes hoverimg2 {
+  0% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  20% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  40% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  60% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  80% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
