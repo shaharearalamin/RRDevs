@@ -1,13 +1,13 @@
 @use "../../utils" as *;
 
 .rt-header {
-    &-logo{
-        padding-left: 24px;
-    }
+  &-logo {
+    padding-left: 24px;
+  }
   &-main-menu {
     & li {
       display: inline-block;
-      margin-right: 30px;
+      margin-right: 26px;
       position: relative;
       &:hover {
         & > a {
@@ -43,14 +43,16 @@
   &-sub-menu {
     width: 300px;
     background: #ffffff;
-    border: 1px solid #000;
     position: absolute;
+    padding: 20px 0px;
     top: 105%;
     left: 0;
     opacity: 0;
     visibility: hidden;
     @include d-transition;
     z-index: 999;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
     & li {
       display: block;
       width: 100%;
@@ -58,16 +60,15 @@
         & a {
           &::before {
             display: block;
-            width: 20px;
+            width: 14px;
           }
         }
       }
-
       & a {
         font-weight: 700;
         font-size: 15px;
         line-height: 173%;
-        padding: 10px 20px;
+        padding: 5px 20px;
         display: block;
         letter-spacing: 0.09em;
         text-transform: uppercase;
@@ -80,11 +81,10 @@
           content: "";
           width: 0px;
           height: 2px;
-          background: red;
-          // display: none;
-          
+          background: var(--rt-secondary-color);
           margin-right: 3px;
           margin-top: 3px;
+          transition: all 0.3s ease-in-out;
         }
         & i {
           font-size: 12px;
@@ -92,16 +92,28 @@
       }
     }
   }
-  &-icon-text{
+  &-icon-text {
     padding-right: 95px;
-     white-space: nowrap;
-     & h5 {
-        & a {
-            @include d-transition;
-            &:hover{
-                color: var(--rt-secondary-color);
-            }
+    white-space: nowrap;
+    & h5 {
+      & a {
+        @include d-transition;
+        &:hover {
+          color: var(--rt-secondary-color);
         }
-     }
+      }
+    }
+  }
+}
+
+.headersticky{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  transition: all .4s ease-in-out;
+  & .col-xl-2, & .col-xl-10 {
+    margin: 0;
   }
 }

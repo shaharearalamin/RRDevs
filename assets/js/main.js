@@ -13,11 +13,10 @@
     resistanceRatio: 0.5,
   });
 
-
-  // service slider 
+  // service slider
   var swiper = new Swiper(".rt__service-slider", {
     slidesPerView: 3,
-    loop:true,
+    loop: true,
     spaceBetween: 30,
     navigation: {
       nextEl: ".rt__service-btn-next",
@@ -25,10 +24,7 @@
     },
   });
 
-  
-
-
-  // testimonials slider 
+  // testimonials slider
   var swiper = new Swiper(".rt__tes-slider", {
     loop: true,
     speed: 1000,
@@ -41,7 +37,6 @@
       prevEl: ".rt__tes-btn-prev",
     },
   });
-
 
   //  blog
   var swiper = new Swiper(".rt-blog-slider", {
@@ -75,8 +70,8 @@
     },
   });
 
-   // branding slider top 
-   var swiper = new Swiper(".rt-branding-slider", {
+  // branding slider top
+  var swiper = new Swiper(".rt-branding-slider", {
     slidesPerView: "auto",
     spaceBetween: 0,
     loop: true,
@@ -104,5 +99,16 @@
       disableOnInteraction: true,
     },
   });
+
+  // header sticky 
+  let headersticky = document.querySelector("header");
+  window.onscroll = function () {
+    let scrollNav = window.scrollY;
+    if (scrollNav >= 200) {
+      headersticky.classList.add("headersticky");
+    } else {
+      headersticky.classList.remove("headersticky");
+    }
+  };
 
 })(jQuery);
