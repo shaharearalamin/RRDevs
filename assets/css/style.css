@@ -8764,7 +8764,7 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.2);
   background: #fff;
   transition: all 0.4s ease-in-out;
 }
@@ -8786,7 +8786,7 @@ textarea {
   transform: scale(1);
 }
 .rt__hero-slider .swiper-wrapper .swiper-slide-active img {
-  transform: scale(1.3); /* Zoom effect for active slide */
+  transform: scale(1.3);
 }
 .rt__hero-bg {
   position: absolute;
@@ -8810,6 +8810,8 @@ textarea {
   text-transform: capitalize;
   text-align: center;
   color: #fff;
+  animation: textanimation 1s ease-in-out;
+  animation-delay: 1.2s;
 }
 .rt__hero-text h1 span {
   color: var(--rt-secondary-color);
@@ -8819,8 +8821,30 @@ textarea {
   text-align: center;
   color: #fff;
   padding-top: 20px;
+  animation: textanimation 1s ease-in-out;
+  animation-delay: 1.3s;
+}
+.rt__hero-text button {
+  animation: textanimation 1s ease-in-out;
+  animation-delay: 1.4s;
 }
 
+@keyframes textanimation {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .rt__about-col-wrapper-1 span img {
   width: 100%;
 }
