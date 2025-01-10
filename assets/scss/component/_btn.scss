@@ -5,7 +5,7 @@
     white-space: nowrap;
     background: var(--rt-secondary-color);
     border-radius: 150px;
-    padding: 20px 30px;
+    padding: 18px 26px;
     color: #fff;
     width: auto;
     
@@ -27,6 +27,11 @@
     padding: 16px 30px;
     color: var(--rt-primary-color);
     width: auto;
+    &:hover{
+      background-color: var(--rt-secondary-color);
+      color: #fff;
+      @include d-transition;
+    }
     & i {
       margin-left: 10px;
       font-weight: 500;

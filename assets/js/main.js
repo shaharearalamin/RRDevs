@@ -158,4 +158,90 @@
     image1.style.transform = "rotateX(0deg) rotateY(0deg)";
   });
 
+  // blog img-1 perspective
+  const container2 = document.getElementById("imageContainer2");
+  const image2 = document.getElementById("perspectiveImage2");
+
+  container2.addEventListener("mousemove", (event) => {
+    const rect = container2.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((centerY - y) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
+
+    image2.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  container2.addEventListener("mouseleave", () => {
+    image2.style.transform = "rotateX(0deg) rotateY(0deg)";
+  });
+
+  // blog img-2 perspective
+  const container3 = document.getElementById("imageContainer3");
+  const image3 = document.getElementById("perspectiveImage3");
+
+  container3.addEventListener("mousemove", (event) => {
+    const rect = container3.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((centerY - y) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
+
+    image3.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  container3.addEventListener("mouseleave", () => {
+    image3.style.transform = "rotateX(0deg) rotateY(0deg)";
+  });
+  // blog img-3 perspective
+  const container4 = document.getElementById("imageContainer4");
+  const image4 = document.getElementById("perspectiveImage4");
+
+  container4.addEventListener("mousemove", (event) => {
+    const rect = container4.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((centerY - y) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
+
+    image4.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  container4.addEventListener("mouseleave", () => {
+    image4.style.transform = "rotateX(0deg) rotateY(0deg)";
+  });
+  // blog img-4 perspective
+  const container5 = document.getElementById("imageContainer5");
+  const image5 = document.getElementById("perspectiveImage5");
+
+  container5.addEventListener("mousemove", (event) => {
+    const rect = container5.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((centerY - y) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
+
+    image5.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  container5.addEventListener("mouseleave", () => {
+    image5.style.transform = "rotateX(0deg) rotateY(0deg)";
+  });
+
 })(jQuery);

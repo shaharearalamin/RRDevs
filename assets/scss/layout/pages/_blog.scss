@@ -4,6 +4,11 @@
   &-card-wrapper {
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.03);
     background: #fff;
+    border: 1px solid #fff;
+    @include d-transition;
+    &:hover {
+      border: 1px solid var(--rt-secondary-color);
+    }
     & br {
       @media #{$lg,$md,$xs} {
         display: none;
@@ -26,8 +31,16 @@
   }
   &-card-img {
     & span {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 20px;
+      // overflow: hidden;
+      perspective: 1000px; /* Adds 3D perspective */
       & img {
         border-radius: 20px;
+        max-width: 100%;
+        display: block;
       }
     }
   }
@@ -40,6 +53,15 @@
     border-radius: 50%;
     background: transparent;
     border: 1px solid #fff;
+    @include d-transition;
+    &:hover{
+      background-color: var(--rt-secondary-color);
+      color: #fff;
+      border: none;
+      & i {
+        color: #fff;
+      }
+    }
     & i {
       color: var(--rt-primary-color);
       font-size: 16px;
