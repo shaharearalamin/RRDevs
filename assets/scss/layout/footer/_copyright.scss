@@ -1,0 +1,29 @@
+@use "../../utils" as *;
+
+.rt-copyright {
+  &-area {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    color: #fff;
+    @media #{$xs} {
+      text-align: center;
+      padding: 28px 0px;
+      font-size: 14px;
+    }
+  }
+  &-left-part {
+    @media #{$xs} {
+      margin-bottom: 16px;
+    }
+  }
+  &-right-part {
+    & a {
+      margin: 0 20px;
+      @media #{$xs} {
+        margin: 0 10px;
+      }
+    }
+  }
+}

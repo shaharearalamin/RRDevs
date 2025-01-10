@@ -1,0 +1,145 @@
+@use "../../utils" as *;
+
+.rt-footer {
+  &-responsive-col {
+    padding-left: 30px;
+    @media #{$md,$xs} {
+      padding-left: 0;
+    }
+  }
+  &-br-remove {
+    position: relative;
+    z-index: 99;
+    @media #{$md} {
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    @media #{$xs} {
+      padding-top: 30px;
+    }
+    & br {
+      @media #{$xl} {
+        display: none;
+      }
+    }
+  }
+  &-bg-shape {
+    & span {
+      left: 0px;
+      top: 20px;
+      z-index: 1;
+      @media #{$xl} {
+        left: 0;
+        top: 0;
+        // z-index: 99;
+      }
+      @media #{$md} {
+        left: 0px;
+        bottom: 0;
+        z-index: -1;
+      }
+      
+    }
+  }
+  &-left-icon {
+    & span {
+      width: 80px;
+      height: 80px;
+      display: block;
+      border-radius: 50%;
+      background-color: var(--rt-secondary-color);
+      display: grid;
+      place-items: center;
+    }
+    & h5 {
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 120%;
+      text-transform: capitalize;
+      @media #{$md,$xs} {
+        font-size: 19px;
+      }
+    }
+  }
+  &-border-start {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    @media #{$xs} {
+      border: none;
+    }
+  }
+  &-header-icon {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  &-list {
+    & li {
+      list-style-type: none;
+      & a {
+        line-height: 2.6;
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+  }
+  &-col {
+    & h4 {
+      font-size: 22px;
+      line-height: 136%;
+      @media #{$xs} {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &-input {
+    width: 100%;
+    & input {
+      background-color: #000;
+      color: #fff;
+      border: 1px solid rgba(110, 80, 80, 0.7);
+      &:focus {
+        border: none;
+      }
+    }
+    & a {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background-color: var(--rt-secondary-color);
+      display: block;
+      display: grid;
+      place-items: center;
+      position: absolute;
+      top: 0;
+      right: -10px;
+      @media #{$xl} {
+        right: -6px;
+      }
+      @media #{$xs} {
+        right: 0px;
+      }
+    }
+  }
+  &-icon{
+    @media #{$xs} {
+      padding: 5px 20px ;
+    }
+  }
+}
+
+.rt__footer{
+  &-gallery{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    & a {
+      width: 80px;
+      height: 80px;
+      display: block;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+
+}
