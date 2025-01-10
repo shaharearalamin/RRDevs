@@ -312,39 +312,6 @@ button:focus {
   text-transform: capitalize;
 }
 
-input[type=text],
-input[type=email],
-input[type=tel],
-input[type=number],
-input[type=password],
-input[type=url],
-textarea {
-  background-color: transparent;
-  color: #fff;
-  text-transform: capitalize;
-  padding: 12px 26px;
-  border-radius: 150px;
-  border: 1px solid rgb(255, 255, 255);
-}
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=tel]:focus,
-input[type=number]:focus,
-input[type=password]:focus,
-input[type=url]:focus,
-textarea:focus {
-  outline: none;
-}
-input[type=text]:focus::placeholder,
-input[type=email]:focus::placeholder,
-input[type=tel]:focus::placeholder,
-input[type=number]:focus::placeholder,
-input[type=password]:focus::placeholder,
-input[type=url]:focus::placeholder,
-textarea:focus::placeholder {
-  opacity: 0;
-}
-
 textarea {
   line-height: 1.4;
   padding-top: 17px;
@@ -9234,6 +9201,44 @@ textarea {
 
 .rt__contactForm-img span img {
   max-width: 100%;
+}
+.rt__contactForm-form-wrapper label {
+  color: var(--rt-primary-color);
+}
+.rt__contactForm-form-wrapper input {
+  background-color: transparent;
+}
+.rt__contactForm-form-wrapper input::placeholder {
+  color: var(--rt-primary-color);
+  background-color: transparent;
+}
+.rt__contactForm-form-wrapper input:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.rt__contactForm-form-wrapper input:focus::placeholder {
+  opacity: 0;
+}
+.rt__contactForm-form-wrapper textarea {
+  background-color: transparent;
+}
+.rt__contactForm-form-wrapper textarea::placeholder {
+  color: var(--rt-primary-color);
+  background-color: transparent;
+}
+.rt__contactForm-form-wrapper textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid rgb(224, 224, 224);
+}
+.rt__contactForm-form-wrapper textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.text-area-icon {
+  right: 20px;
+  top: 50px;
 }
 
 .rt__trip-area {

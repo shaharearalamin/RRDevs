@@ -8,4 +8,44 @@
       }
     }
   }
+  &-form-wrapper {
+    & label {
+      color: var(--rt-primary-color);
+    }
+    & input {
+      background-color: transparent;
+      &::placeholder {
+        color: var(--rt-primary-color);
+        background-color: transparent;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border: none;
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
+    & textarea {
+      background-color: transparent;
+      &::placeholder {
+        color: var(--rt-primary-color);
+        background-color: transparent;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid  rgb(224, 224, 224);
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.text-area-icon {
+  right: 20px;
+  top: 50px;
 }
