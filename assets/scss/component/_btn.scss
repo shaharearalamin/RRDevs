@@ -8,6 +8,12 @@
     padding: 20px 30px;
     color: #fff;
     width: auto;
+    
+    &:hover{
+      background-color: var(--rt-primary-color);
+      color: #fff;
+      @include d-transition;
+    }
     & i {
       margin-left: 10px;
       font-weight: 500;

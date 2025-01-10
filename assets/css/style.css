@@ -125,7 +125,7 @@
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 :root {
-  --rt-primary-color: #034833;
+  --rt-primary-color: #034833 ;
   --rt-secondary-color: #83CD20;
   --rt-secondary-color-50: #f1f5eb;
   --rt-heading-color: #034833;
@@ -152,6 +152,11 @@
   padding: 20px 30px;
   color: #fff;
   width: auto;
+}
+.rt__btn-secondary:hover {
+  background-color: var(--rt-primary-color);
+  color: #fff;
+  transition: all 0.3s ease-in-out 0s;
 }
 .rt__btn-secondary i {
   margin-left: 10px;
@@ -8855,15 +8860,29 @@ textarea {
   overflow: hidden;
   width: 94%;
 }
+.rt__about-img-2 span img {
+  transition: all 0.3s ease-in-out 0s;
+}
+.rt__about-img-2:hover img {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out 0s;
+}
 .rt__about-img-3 {
   width: 100%;
   height: 336px;
+}
+.rt__about-img-3 span img {
+  transition: all 0.3s ease-in-out 0s;
 }
 .rt__about-img-3 span {
   overflow: hidden;
   position: absolute;
   left: -100px;
   bottom: 0;
+}
+.rt__about-img-3 span:hover img {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out 0s;
 }
 .rt__about-counter {
   bottom: 42px;

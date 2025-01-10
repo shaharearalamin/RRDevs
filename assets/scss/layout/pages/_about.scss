@@ -14,15 +14,37 @@
   &-img-2 {
     overflow: hidden;
     width: 94%;
+    & span {
+      & img {
+        @include d-transition;
+      }
+    }
+    &:hover{
+      & img {
+        transform: scale(1.2);
+       @include d-transition;
+      }
+    }
   }
   &-img-3 {
     width: 100%;
     height: 336px;
     & span {
+      & img {
+        @include d-transition;
+      }
+    }
+    & span {
       overflow: hidden;
       position: absolute;
       left: -100px;
       bottom: 0;
+      &:hover{
+        & img {
+          transform: scale(1.2);
+          @include d-transition ;
+        }
+      }
     }
   }
   &-counter {
