@@ -253,27 +253,27 @@ button:focus {
   text-transform: capitalize;
 }
 
-// input[type="text"],
-// input[type="email"],
-// input[type="tel"],
-// input[type="number"],
-// input[type="password"],
-// input[type="url"],
-// textarea {
-//   background-color: transparent;
-//   color: #fff;
-//   text-transform: capitalize;
-//   padding: 12px 26px;
-//   border-radius: 150px;
-//   border: 1px solid rgb(255, 255, 255);
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
+textarea {
+  background-color: transparent;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px 26px;
+  border-radius: 150px;
+  border: 1px solid rgb(255, 255, 255);
   
-//   &:focus{
-// 	outline: none ;
-//   	&::placeholder{
-//   		opacity: 0;
-//   	}
-//   }
-// }
+  &:focus{
+	outline: none ;
+  	&::placeholder{
+  		opacity: 0;
+  	}
+  }
+}
 
 textarea {
   line-height: 1.4;
