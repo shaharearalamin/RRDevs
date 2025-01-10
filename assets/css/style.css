@@ -336,7 +336,7 @@ textarea {
   background-color: transparent;
   color: #fff;
   text-transform: capitalize;
-  padding: 10px 26px;
+  padding: 12px 26px;
   border-radius: 150px;
   border: 1px solid rgb(255, 255, 255);
 }
@@ -9002,8 +9002,7 @@ textarea {
   width: 100%;
 }
 .rt__contact-col-wrapper-1 form button {
-  border: 1px solid rgb(255, 255, 255);
-  padding: 13px 20px;
+  padding: 16px 20px;
   border-radius: 150px;
   background-color: #fff;
   font-weight: 600;
