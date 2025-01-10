@@ -3,6 +3,8 @@
     transition: $property $duration $timing-function $delay;
   }
   
+        // @include d-transition(transform, 0.2s, ease-out);
+
 // placeholder input
 @mixin tp-placeholder {
     &::-webkit-input-placeholder {
