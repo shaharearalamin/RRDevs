@@ -1,6 +1,13 @@
 (function ($) {
   "use strict";
 
+
+  // magnificPopup start 
+  $('.popup-hero-vedio').magnificPopup({
+    type: 'iframe'
+  });
+
+
   // hero slider
   var swiper = new Swiper(".rt__hero-slider", {
     loop: true,
