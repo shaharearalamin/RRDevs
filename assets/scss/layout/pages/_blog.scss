@@ -2,6 +2,8 @@
 
 .rt-blog {
   &-card-wrapper {
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.03);
+    background: #fff;
     & br {
       @media #{$lg,$md,$xs} {
         display: none;
@@ -14,7 +16,9 @@
     }
   }
   &-card-sm-text {
-    & p {
+    & p,
+    & i {
+      color: var(--rt-primary-color);
       @media #{$lg} {
         font-size: 14px;
       }
@@ -23,7 +27,7 @@
   &-card-img {
     & span {
       & img {
-        border-radius: 20px 20px 0 0;
+        border-radius: 20px;
       }
     }
   }
@@ -46,8 +50,8 @@
     right: 84px;
     @media #{$xs} {
       top: inherit;
-    right: 108px;
-    bottom: -10%;
+      right: 108px;
+      bottom: -10%;
     }
   }
   &-prev-btn {
@@ -55,14 +59,14 @@
     right: 0;
     @media #{$xs} {
       top: inherit;
-    right: 20px;
-    bottom: -10%;
+      right: 20px;
+      bottom: -10%;
     }
   }
   &-card-heading-text {
     & h5 {
       font-size: 24px;
-      
+
       @media #{$lg,$md,$xs} {
         font-size: 20px;
       }
