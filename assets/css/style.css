@@ -9216,7 +9216,7 @@ textarea {
   height: 100%;
   display: block;
   border-radius: 20px;
-  overflow: hidden;
+  perspective: 1000px; /* Adds 3D perspective */
 }
 .rt__tes-img span img {
   width: 100%;
