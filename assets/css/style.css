@@ -9466,8 +9466,16 @@ textarea {
     margin-top: 0px;
   }
 }
+.rt__contactForm-img span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 20px;
+  perspective: 1000px; /* Adds 3D perspective */
+}
 .rt__contactForm-img span img {
   max-width: 100%;
+  display: block;
 }
 .rt__contactForm-form-wrapper label {
   color: var(--rt-primary-color);
