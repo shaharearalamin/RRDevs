@@ -1,6 +1,7 @@
 @use "../utils" as *;
 
 /* Scroll back to Top Button */
+
 #scrollBtn {
     position: fixed;
     bottom: 50px; 
@@ -9,7 +10,7 @@
     height: 60px; 
     border: 4px solid var(--rt-secondary-color); 
     border-radius: 50%; 
-    // background-color: var(--rt-primary-color); /* ব্যাকগ্রাউন্ড */
+    background-color: #fff; 
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); 
     display: flex;
     justify-content: center;

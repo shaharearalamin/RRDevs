@@ -264,21 +264,22 @@
 
   // back to top btn
   const scrollBtn = document.getElementById("scrollBtn");
+  scrollBtn.style.display = "none";
   window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
+    const scrollTop = window.scrollY; 
     const docHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = Math.round((scrollTop / docHeight) * 100);
-    scrollBtn.style.setProperty("--scroll-progress", `${scrollPercent}%`);
-    if (scrollPercent <= 0) {
+      document.documentElement.scrollHeight - window.innerHeight; 
+    const scrollPercent = Math.round((scrollTop / docHeight) * 100); 
+    if (scrollTop > 0) {
+      scrollBtn.style.display = "flex"; 
+    } else {
       scrollBtn.style.display = "none";
-    } else {
-      scrollBtn.style.display = "flex";
     }
+    scrollBtn.style.setProperty("--scroll-progress", `${scrollPercent}%`);
     if (scrollPercent >= 100) {
-      scrollBtn.textContent = "↑";
+      scrollBtn.textContent = "↑"; 
     } else {
-      scrollBtn.textContent = `${scrollPercent}%`;
+      scrollBtn.textContent = `${scrollPercent}%`; 
     }
   });
   scrollBtn.addEventListener("click", () => {
