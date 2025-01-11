@@ -20,7 +20,11 @@
       color: var(--rt-primary-color);
     }
     & input {
-      background-color: transparent;
+      &:-webkit-autofill {
+        background-color: white !important; 
+        box-shadow: 0 0 0px 1000px white inset !important;
+      }
+      background-color: #fff ;
       &::placeholder {
         color: var(--rt-primary-color);
         background-color: transparent;
@@ -29,6 +33,7 @@
         outline: none;
         box-shadow: none;
         border: none;
+        background-color: #fff ;
         &::placeholder {
           opacity: 0;
         }
@@ -43,7 +48,7 @@
       &:focus {
         outline: none;
         box-shadow: none;
-        border: 1px solid  rgb(224, 224, 224);
+        border: 1px solid rgb(224, 224, 224);
         &::placeholder {
           opacity: 0;
         }

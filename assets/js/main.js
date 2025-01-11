@@ -134,7 +134,6 @@
   container.addEventListener("mouseleave", () => {
     image.style.transform = "rotateX(0deg) rotateY(0deg)";
   });
-  
 
   // contactForm img perspective
   const container1 = document.getElementById("imageContainer1");
@@ -243,5 +242,24 @@
   container5.addEventListener("mouseleave", () => {
     image5.style.transform = "rotateX(0deg) rotateY(0deg)";
   });
+
+  // custom mouse move
+  const circle = document.querySelector(".rt__mouse-cursor");
+  let mouseX = 0,
+    mouseY = 0;
+  let circleX = 0,
+    circleY = 0;
+  document.addEventListener("mousemove", (event) => {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+  });
+  function animate() {
+    circleX += (mouseX - circleX) * 0.1;
+    circleY += (mouseY - circleY) * 0.1;
+    circle.style.left = `${circleX}px`;
+    circle.style.top = `${circleY}px`;
+    requestAnimationFrame(animate);
+  }
+  animate();
 
 })(jQuery);

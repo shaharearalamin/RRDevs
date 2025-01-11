@@ -216,6 +216,17 @@
   margin-bottom: 20px;
 }
 
+.rt__mouse-cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: var(--rt-secondary-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8589,10 +8600,14 @@ textarea {
 .rt-footer-list li {
   list-style-type: none;
 }
+.rt-footer-list li:hover a {
+  color: var(--rt-secondary-color);
+}
 .rt-footer-list li a {
-  line-height: 2.6;
+  line-height: 2.4;
   font-size: 16px;
   color: #fff;
+  transition: all 0.3s ease-in-out 0s;
 }
 .rt-footer-col h4 {
   font-size: 22px;
@@ -8642,6 +8657,16 @@ textarea {
     padding: 5px 20px;
   }
 }
+.rt-footer-social-icon a {
+  padding: 10px;
+}
+.rt-footer-social-icon a:hover i {
+  color: var(--rt-secondary-color);
+}
+.rt-footer-social-icon a i {
+  color: #fff;
+  transition: all 0.3s ease-in-out 0s;
+}
 
 .rt__footer-gallery {
   display: flex;
@@ -8655,6 +8680,28 @@ textarea {
   display: block;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
+}
+.rt__footer-gallery a:hover span {
+  transform: scale(1);
+}
+.rt__footer-gallery a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+  background-color: var(--rt-secondary-color);
+  transform: scale(0);
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out 0s;
+}
+.rt__footer-gallery a span i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .rt-copyright-area {
@@ -8677,7 +8724,11 @@ textarea {
   }
 }
 .rt-copyright-right-part a {
+  transition: all 0.3s ease-in-out 0s;
   margin: 0 20px;
+}
+.rt-copyright-right-part a:hover {
+  color: var(--rt-secondary-color);
 }
 @media (max-width: 575px) {
   .rt-copyright-right-part a {
@@ -9486,7 +9537,11 @@ textarea {
   color: var(--rt-primary-color);
 }
 .rt__contactForm-form-wrapper input {
-  background-color: transparent;
+  background-color: #fff;
+}
+.rt__contactForm-form-wrapper input:-webkit-autofill {
+  background-color: white !important;
+  box-shadow: 0 0 0px 1000px white inset !important;
 }
 .rt__contactForm-form-wrapper input::placeholder {
   color: var(--rt-primary-color);
@@ -9496,6 +9551,7 @@ textarea {
   outline: none;
   box-shadow: none;
   border: none;
+  background-color: #fff;
 }
 .rt__contactForm-form-wrapper input:focus::placeholder {
   opacity: 0;
@@ -9537,7 +9593,7 @@ textarea {
 }
 
 .rt-blog-card-wrapper {
-  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background: #fff;
   border: 1px solid #fff;
   transition: all 0.3s ease-in-out 0s;

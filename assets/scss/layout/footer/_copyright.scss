@@ -20,6 +20,10 @@
   }
   &-right-part {
     & a {
+      @include d-transition;
+      &:hover{
+        color: var(--rt-secondary-color);
+      }
       margin: 0 20px;
       @media #{$xs} {
         margin: 0 10px;
