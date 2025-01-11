@@ -262,4 +262,29 @@
   }
   animate();
 
+  // back to top btn
+  const scrollBtn = document.getElementById("scrollBtn");
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+    scrollBtn.style.setProperty("--scroll-progress", `${scrollPercent}%`);
+    if (scrollPercent <= 0) {
+      scrollBtn.style.display = "none";
+    } else {
+      scrollBtn.style.display = "flex";
+    }
+    if (scrollPercent >= 100) {
+      scrollBtn.textContent = "↑";
+    } else {
+      scrollBtn.textContent = `${scrollPercent}%`;
+    }
+  });
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 })(jQuery);
