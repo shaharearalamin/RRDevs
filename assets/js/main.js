@@ -288,4 +288,39 @@
       behavior: "smooth",
     });
   });
+
+  // counters about and fact
+  const createOdometer = (el, value) => {
+    const odometer = new Odometer({
+      el: el,
+      value: 0,
+    });
+    let hasRun = false;
+    const options = {
+      threshold: [0, 0.9],
+    };
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!hasRun) {
+            odometer.update(value);
+            hasRun = true;
+          }
+        }
+      });
+    };
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(el);
+  };
+  
+  const counter1 = document.querySelector(".subscribers-odometer");
+  createOdometer(counter1, 20);
+  const counter2 = document.querySelector(".videos-odometer");
+  createOdometer(counter2, 200);
+  const projectsOdometer = document.querySelector(".projects-odometer");
+  createOdometer(projectsOdometer, 500);
+  const projectsOdometer1 = document.querySelector(".projects-odometer1");
+  createOdometer(projectsOdometer1, 700);
+  const projectsOdometer2 = document.querySelector(".projects-odometer2");
+  createOdometer(projectsOdometer2, 600);
 })(jQuery);

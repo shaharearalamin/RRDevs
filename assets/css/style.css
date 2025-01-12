@@ -541,6 +541,10 @@ textarea {
   border-radius: 50px;
 }
 
+.text-primary-color {
+  color: var(--rt-primary-color);
+}
+
 .bg-primary-color {
   background-color: var(--rt-primary-color);
 }
@@ -9181,7 +9185,7 @@ textarea {
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background: #fff;
 }
-.rt__cta-counter-card span {
+.rt__cta-counter-card .span-icon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
