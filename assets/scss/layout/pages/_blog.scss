@@ -70,6 +70,10 @@
   &-next-btn {
     top: 13%;
     right: 84px;
+    @media #{$xl} {
+      top: 12%;
+      right: 110px;
+    }
     @media #{$xs} {
       top: inherit;
       right: 108px;
@@ -79,6 +83,10 @@
   &-prev-btn {
     top: 13%;
     right: 0;
+    @media #{$xl} {
+      top: 12%;
+      right: 25px;
+    }
     @media #{$xs} {
       top: inherit;
       right: 20px;

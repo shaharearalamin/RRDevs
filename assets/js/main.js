@@ -314,13 +314,13 @@
   };
   
   const counter1 = document.querySelector(".subscribers-odometer");
-  createOdometer(counter1, 20);
+  createOdometer(counter1, 10);
   const counter2 = document.querySelector(".videos-odometer");
   createOdometer(counter2, 200);
   const projectsOdometer = document.querySelector(".projects-odometer");
   createOdometer(projectsOdometer, 500);
   const projectsOdometer1 = document.querySelector(".projects-odometer1");
-  createOdometer(projectsOdometer1, 700);
+  createOdometer(projectsOdometer1, 300);
   const projectsOdometer2 = document.querySelector(".projects-odometer2");
   createOdometer(projectsOdometer2, 600);
 })(jQuery);

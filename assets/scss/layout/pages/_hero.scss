@@ -45,6 +45,12 @@
       color: #fff;
       animation: textanimation 1s ease-in-out;
       animation-delay: 1.2s;
+      & br {
+        @media #{$xl} {
+          display: none;
+        }
+      }
+
       & span {
         color: var(--rt-secondary-color);
       }

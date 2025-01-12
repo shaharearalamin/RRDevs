@@ -36,6 +36,9 @@
     padding: 58px 30px;
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
     background: #fff;
+    @media #{$xl} {
+      padding: 36px 18px;
+    }
     & .span-icon {
       width: 60px;
       height: 60px;

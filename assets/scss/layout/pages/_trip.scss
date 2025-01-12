@@ -15,4 +15,9 @@
     left: 30%;
     z-index: -1;
   }
+  &-text{
+    @media #{$xl} {
+       padding-left: 80px;
+    }
+  }
 }

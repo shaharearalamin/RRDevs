@@ -9,6 +9,9 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @media #{$xl} {
+      padding: 20px 30px;
+    }
     & form {
       display: flex;
       align-items: center;

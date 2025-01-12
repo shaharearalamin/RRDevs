@@ -3,6 +3,9 @@
 .rt-header {
   &-logo {
     padding-left: 24px;
+    @media #{$xl} {
+      padding-left: 0px;
+    }
   }
   &-main-menu {
     & li {
@@ -95,6 +98,9 @@
   &-icon-text {
     padding-right: 95px;
     white-space: nowrap;
+    @media #{$xl} {
+      padding-right: 10px;
+    }
     & h5 {
       & a {
         @include d-transition;

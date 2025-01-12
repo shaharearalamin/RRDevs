@@ -9,6 +9,9 @@
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
     background: #fff;
     position: relative;
+    @media #{$xl} {
+      padding: 40px;
+    }
     & > p {
       font-size: 30px;
       color: var(--rt-primary-color);

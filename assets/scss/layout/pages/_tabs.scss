@@ -46,7 +46,7 @@
       & span {
         & img {
           width: 90%;
-          @media #{$sm} {
+          @media #{$xl,$sm} {
             width: 100%;
           }
         }

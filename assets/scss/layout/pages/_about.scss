@@ -52,6 +52,11 @@
     left: 46px;
     z-index: 10;
     padding: 36px 32px;
+    @media #{$xl} {
+      bottom: 18px;
+    left: 14px;
+      padding: 20px 25px;
+    }
     & h1 {
       color: #fff;
     }

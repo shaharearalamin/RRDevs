@@ -30,8 +30,7 @@
       z-index: 1;
       @media #{$xl} {
         left: 0;
-        top: 0;
-        // z-index: 99;
+        top: 200px;
       }
       @media #{$md} {
         left: 0px;
