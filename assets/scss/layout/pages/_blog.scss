@@ -94,9 +94,8 @@
     }
   }
   &-card-heading-text {
-    & h5 {
-      font-size: 24px;
-
+    & h4 {
+      // font-size: 24px;
       @media #{$lg,$md,$xs} {
         font-size: 20px;
       }

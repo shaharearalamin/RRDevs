@@ -90,6 +90,14 @@
       background-color: var(--rt-secondary-color);
       display: grid;
       place-items: center;
+      // @media #{$xl} {
+      //   width: 94px;
+      //   height: 80px;
+      //   border-radius: 50%;
+      //   background-color: var(--rt-secondary-color);
+      //   display: grid;
+      //   place-items: center;
+      // }
     }
   }
 }

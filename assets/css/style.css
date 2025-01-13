@@ -206,7 +206,7 @@
   background: transparent;
   border: 1px solid var(--rt-secondary-color);
   border-radius: 150px;
-  padding: 16px 30px;
+  padding: 16px 20px;
   color: var(--rt-primary-color);
   width: auto;
 }
@@ -9817,11 +9817,8 @@ textarea {
     bottom: -10%;
   }
 }
-.rt-blog-card-heading-text h5 {
-  font-size: 24px;
-}
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .rt-blog-card-heading-text h5 {
+  .rt-blog-card-heading-text h4 {
     font-size: 20px;
   }
 }
