@@ -74,6 +74,10 @@
       top: 12%;
       right: 110px;
     }
+    @media #{$lg} {
+      top: 13%;
+      right: 120px;
+    }
     @media #{$xs} {
       top: inherit;
       right: 108px;
@@ -87,6 +91,10 @@
       top: 12%;
       right: 25px;
     }
+    @media #{$lg} {
+      top: 13%;
+      right: 38px;
+    }
     @media #{$xs} {
       top: inherit;
       right: 20px;
@@ -97,7 +105,7 @@
     & h4 {
       // font-size: 24px;
       @media #{$lg,$md,$xs} {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
     & p {

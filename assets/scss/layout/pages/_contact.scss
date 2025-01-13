@@ -34,6 +34,12 @@
     left: 0;
   }
   &-col-wrapper-2{
+    @media #{$lg} {
+      display: grid;
+      place-items: center;
+      padding-bottom: 50px;
+    
+    }
     & span {
         & img {
             max-width: 100%;

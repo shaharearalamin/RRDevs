@@ -27,6 +27,20 @@
       nextEl: ".rt__service-btn-next",
       prevEl: ".rt__service-btn-prev",
     },
+    breakpoints: {
+      350: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
   });
 
   // testimonials slider

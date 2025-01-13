@@ -78,6 +78,9 @@
     }
   }
   &-btn-content {
+    @media #{$lg} {
+      padding: 12px;
+    }
     @media #{$md} {
       padding: 20px;
     }

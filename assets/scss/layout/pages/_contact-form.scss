@@ -55,6 +55,11 @@
       }
     }
   }
+  &-col-wrapper-1{
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .text-area-icon {

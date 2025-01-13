@@ -17,7 +17,17 @@
   }
   &-text{
     @media #{$xl} {
-       padding-left: 80px;
+       padding-left:850px;
+    }
+    @media #{$lg} {
+       padding-left: 50px;
+    }
+    & p {
+      & br {
+        @media #{$lg} {
+         display: none;
+       }
+      }
     }
   }
 }

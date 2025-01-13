@@ -3,7 +3,7 @@
 .rt-footer {
   &-responsive-col {
     padding-left: 30px;
-    @media #{$md,$xs} {
+    @media #{$lg,$md,$xs} {
       padding-left: 0;
     }
   }
@@ -30,6 +30,10 @@
       z-index: 1;
       @media #{$xl} {
         left: 0;
+        top: 200px;
+      }
+      @media #{$lg} {
+        left: 20%;
         top: 200px;
       }
       @media #{$md} {

@@ -4,12 +4,16 @@
     &-slider{
         margin-right: -100px;
         border-radius: 20px;
+        @media #{$lg} {
+          margin-right: 0px;
+        // border-radius: 20px;
+        }
     }
   &-slide {
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
     background: #fff;
     position: relative;
-    @media #{$xl} {
+    @media #{$xl,$lg} {
       padding: 40px;
     }
     & > p {
@@ -37,6 +41,11 @@
     bottom: 70px;
     right: -40px;
     z-index: 99;
+    @media #{$lg} {
+      bottom: 70px;
+      right: 0px;
+      z-index: 99;
+    }
   }
   &-img {
     & span {

@@ -45,8 +45,11 @@
       color: #fff;
       animation: textanimation 1s ease-in-out;
       animation-delay: 1.2s;
+      @media #{$lg} {
+        font-size: 70px;
+      }
       & br {
-        @media #{$xl} {
+        @media #{$xl,$lg} {
           display: none;
         }
       }
