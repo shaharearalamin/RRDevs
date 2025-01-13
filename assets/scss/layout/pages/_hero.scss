@@ -17,7 +17,7 @@
           transform: scale(1);
         }
         &-active img {
-          transform: scale(1.3); 
+          transform: scale(1.3);
         }
       }
     }
@@ -38,6 +38,10 @@
   &-text {
     padding-top: 230px;
     padding-bottom: 200px;
+    @media #{$md} {
+      padding-top: 130px;
+      padding-bottom: 100px;
+    }
     & h1 {
       font-size: 80px;
       text-transform: capitalize;
@@ -48,8 +52,11 @@
       @media #{$lg} {
         font-size: 70px;
       }
+      @media #{$md} {
+        font-size: 60px;
+      }
       & br {
-        @media #{$xl,$lg} {
+        @media #{$xl,$lg,$md} {
           display: none;
         }
       }
@@ -72,7 +79,6 @@
     }
   }
 }
-
 
 @keyframes textanimation {
   0% {

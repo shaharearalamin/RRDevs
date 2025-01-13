@@ -12,6 +12,9 @@
     & span {
       color: #16171a;
     }
+    @media #{$md} {
+      font-size: 40px;
+    }
   }
   & p {
 	margin-top: 20px;

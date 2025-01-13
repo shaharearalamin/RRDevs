@@ -7,11 +7,18 @@
     @media #{$lg} {
       padding-bottom: 300px;
     }
+    @media #{$md} {
+      padding-top: 80px;
+      padding-bottom: 280px;
+    }
   }
   &-icon {
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
     background: #fff;
     padding: 40px;
+    @media #{$md} {
+      padding: 22px;
+    }
     & h4 {
       & a {
         @include d-transition;

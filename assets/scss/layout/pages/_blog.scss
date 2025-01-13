@@ -10,7 +10,7 @@
       border: 1px solid var(--rt-secondary-color);
     }
     & br {
-      @media #{$lg,$md,$xs} {
+      @media #{$xl,$lg,$md,$xs} {
         display: none;
       }
     }

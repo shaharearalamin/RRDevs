@@ -1,32 +1,40 @@
 @use "../../utils" as *;
 
 .rt__trip {
-    &-area{
-        margin-top: -200px;
-    }
+  &-area {
+    margin-top: -200px;
+  }
   &-wrapper {
     z-index: 2;
+    @media #{$md} {
+      padding: 30px;
+    }
   }
   &-img {
     margin-top: -50px;
+    & span {
+      & img {
+        max-width: 100%;
+      }
+    }
   }
   &-shape {
     top: 15%;
     left: 30%;
     z-index: -1;
   }
-  &-text{
-    @media #{$xl} {
-       padding-left:850px;
+  &-text {
+    @media #{$xl,$lg} {
+      padding-left: 50px;
     }
-    @media #{$lg} {
-       padding-left: 50px;
+    @media #{$md} {
+      padding-left: 0px;
     }
     & p {
       & br {
-        @media #{$lg} {
-         display: none;
-       }
+        @media #{$lg,$md} {
+          display: none;
+        }
       }
     }
   }

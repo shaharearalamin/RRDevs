@@ -90,6 +90,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
+  background-color: #fff;
   @include d-transition;
   &:hover{
     background-color: var(--rt-secondary-color);

@@ -23,6 +23,9 @@
     background-color: #fff;
     border: 1px solid rgb(239, 239, 239);
     @include d-transition;
+    @media #{$md} {
+     padding: 30px;
+    }
     &:hover {
       border: 1px solid var(--rt-secondary-color);
       & span {
@@ -56,6 +59,12 @@
     right: 0;
     @media #{$lg} {
       top: 22%;
+    }
+    @media #{$md} {
+      z-index: 10;
+    top: inherit;
+    bottom: 3%;
+    right: 20px;
     }
   }
 }

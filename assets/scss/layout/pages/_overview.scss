@@ -7,14 +7,18 @@
   &-card {
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
     background: #fff;
-    @media #{$lg} {
+    @media #{$lg,$md} {
       flex-wrap: wrap;
       padding: 20px;
     }
+  
     &:hover{
       & span{
         animation: hoverimg2 .3s ease-in-out;
       }
+    }
+   & > div {
+     width: 100%;
     }
     &-icon {
       width: 160px;
@@ -24,7 +28,7 @@
       place-items: center;
       border-radius: 20px;
       position: relative;
-      @media #{$lg} {
+      @media #{$lg,$md} {
         width: 100%;
       }
       & h2 {

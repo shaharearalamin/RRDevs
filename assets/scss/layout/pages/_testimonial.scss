@@ -20,6 +20,9 @@
       font-size: 30px;
       color: var(--rt-primary-color);
       padding-bottom: 44px;
+      @media #{$md} {
+        font-size: 27px;
+      }
     }
   }
   &-icon {

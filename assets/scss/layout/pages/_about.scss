@@ -74,6 +74,11 @@
     left: 190px;
       padding: 30px 35px;
     }
+    @media #{$md} {
+      bottom: 70px;
+    left: 70px;
+      padding: 30px 35px;
+    }
     & h1 {
       color: #fff;
     }
