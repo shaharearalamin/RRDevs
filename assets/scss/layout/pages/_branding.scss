@@ -1,16 +1,27 @@
+@use "../../utils" as *;
+
 .rt-branding-slider {
   & .swiper-wrapper {
     transition-timing-function: linear;
     & .swiper-slide {
       width: auto;
       padding: 0px 78px;
+      @media #{$sm} {
+        width: auto;
+      padding: 0px 58px;
+      }
     }
   }
 }
-
 .rt-branding-slider {
   width: 100%;
   overflow: hidden;
+}
+.rt-branding-area {
+  margin-bottom: 112px;
+  @media #{$sm} {
+    margin-bottom: 80px;
+  }
 }
 
 .swiper-wrapper {

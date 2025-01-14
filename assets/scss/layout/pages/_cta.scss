@@ -27,6 +27,10 @@
       transform: translate(-50%, -50%);
       animation: rt__cta-play-btn 1s infinite ease-in-out;
       animation-direction: alternate;
+      @media #{$xl} {
+        width: 86px;
+        height: 86px;
+      }
     }
   }
   &-counter-card {
@@ -39,7 +43,7 @@
     @media #{$xl} {
       padding: 36px 18px;
     }
-    @media #{$lg} {
+    @media #{$lg,$sm} {
       display: flex;
     align-items: center;
     justify-content: center;

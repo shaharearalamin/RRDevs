@@ -6,7 +6,7 @@
   }
   &-wrapper {
     z-index: 2;
-    @media #{$md} {
+    @media #{$md,$sm} {
       padding: 30px;
     }
   }
@@ -27,14 +27,19 @@
     @media #{$xl,$lg} {
       padding-left: 50px;
     }
-    @media #{$md} {
+    @media #{$md,$sm} {
       padding-left: 0px;
     }
     & p {
       & br {
-        @media #{$lg,$md} {
+        @media #{$lg,$md,$sm} {
           display: none;
         }
+      }
+    }
+    & h1 {
+      @media #{$sm} {
+        font-size: 30px;
       }
     }
   }

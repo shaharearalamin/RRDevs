@@ -66,6 +66,11 @@
     bottom: 3%;
     right: 20px;
     }
+    @media #{$sm} {
+      top: 19%;
+      bottom: inherit;
+      right: 20px;;
+    }
   }
 }
 

@@ -32,9 +32,9 @@
         slidesPerView: 1,
       },
       576: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
-      992: {
+      768: {
         slidesPerView: 2,
       },
       1200: {
@@ -77,7 +77,7 @@
       350: {
         slidesPerView: 1,
       },
-      576: {
+      768: {
         slidesPerView: 2,
       },
       992: {

@@ -15,6 +15,17 @@
     @media #{$md} {
       padding: 10px 42px;
     }
+    @media #{$sm} {
+      padding: 10px 42px;
+      gap: 10px;
+    }
+    & p {
+      & br {
+        @media #{$sm} {
+          display: none;
+        }
+      }
+    }
     & form {
       display: flex;
       align-items: center;
@@ -35,9 +46,12 @@
   &-shape-1{
     top: 50px;
     left: 0;
+    @media #{$sm} {
+      display: none;
+    }
   }
   &-col-wrapper-2{
-    @media #{$lg,$md} {
+    @media #{$lg,$md,$sm} {
       display: grid;
       place-items: center;
       padding-bottom: 50px;

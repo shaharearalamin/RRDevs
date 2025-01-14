@@ -79,9 +79,8 @@
       right: 120px;
     }
     @media #{$xs} {
-      top: inherit;
-      right: 108px;
-      bottom: -10%;
+      top: 11%;
+      right: 126px;
     }
   }
   &-prev-btn {
@@ -96,9 +95,8 @@
       right: 38px;
     }
     @media #{$xs} {
-      top: inherit;
-      right: 20px;
-      bottom: -10%;
+      top: 11%;
+      right: 40px;
     }
   }
   &-card-heading-text {

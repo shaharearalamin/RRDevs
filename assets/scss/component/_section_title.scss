@@ -15,6 +15,14 @@
     @media #{$md} {
       font-size: 40px;
     }
+    @media #{$sm} {
+      font-size: 30px;
+    }
+    &  br {
+      @media #{$sm} {
+        display: none;
+      }
+    }
   }
   & p {
 	margin-top: 20px;
