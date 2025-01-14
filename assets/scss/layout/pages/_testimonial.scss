@@ -4,7 +4,7 @@
     &-slider{
         margin-right: -100px;
         border-radius: 20px;
-        @media #{$lg} {
+        @media #{$lg,$md,$sm} {
           margin-right: 0px;
         // border-radius: 20px;
         }
@@ -16,12 +16,18 @@
     @media #{$xl,$lg} {
       padding: 40px;
     }
+    @media #{$md,$sm} {
+      padding: 20px;
+    }
     & > p {
       font-size: 30px;
       color: var(--rt-primary-color);
       padding-bottom: 44px;
       @media #{$md} {
         font-size: 27px;
+      }
+      @media #{$sm} {
+        font-size: 22px;
       }
     }
   }
@@ -47,6 +53,16 @@
     @media #{$lg} {
       bottom: 70px;
       right: 0px;
+      z-index: 99;
+    }
+    @media #{$md} {
+      bottom: 70px;
+      right: 20px;
+      z-index: 99;
+    }
+    @media #{$sm} {
+      bottom: 30px;
+      right: 20px;
       z-index: 99;
     }
   }

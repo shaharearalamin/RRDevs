@@ -9544,7 +9544,7 @@ textarea {
   margin-right: -100px;
   border-radius: 20px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .rt__tes-slider {
     margin-right: 0px;
   }
@@ -9559,6 +9559,11 @@ textarea {
     padding: 40px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .rt__tes-slide {
+    padding: 20px;
+  }
+}
 .rt__tes-slide > p {
   font-size: 30px;
   color: var(--rt-primary-color);
@@ -9567,6 +9572,11 @@ textarea {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rt__tes-slide > p {
     font-size: 27px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .rt__tes-slide > p {
+    font-size: 22px;
   }
 }
 .rt__tes-icon {
@@ -9593,6 +9603,20 @@ textarea {
   .rt__tes-slider-btn {
     bottom: 70px;
     right: 0px;
+    z-index: 99;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .rt__tes-slider-btn {
+    bottom: 70px;
+    right: 20px;
+    z-index: 99;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .rt__tes-slider-btn {
+    bottom: 30px;
+    right: 20px;
     z-index: 99;
   }
 }
