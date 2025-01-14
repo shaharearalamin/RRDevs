@@ -16,6 +16,9 @@
     }
   }
   &-form-wrapper {
+    @media #{$xs} {
+     padding: 20px;
+    }
     & label {
       color: var(--rt-primary-color);
     }

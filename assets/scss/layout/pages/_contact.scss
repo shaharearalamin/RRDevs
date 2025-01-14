@@ -15,9 +15,18 @@
     @media #{$md} {
       padding: 10px 42px;
     }
-    @media #{$sm} {
+    @media #{$sm,$xs} {
       padding: 10px 42px;
       gap: 10px;
+    }
+    @media #{$xs} {
+      padding: 20px 26px;
+      gap: 10px;
+    }
+    & h1 {
+      @media #{$xs} {
+        font-size: 39px;
+      }
     }
     & p {
       & br {

@@ -79,7 +79,7 @@
       right: 120px;
     }
     @media #{$xs} {
-      top: 11%;
+      top: 17%;
       right: 126px;
     }
   }
@@ -95,7 +95,7 @@
       right: 38px;
     }
     @media #{$xs} {
-      top: 11%;
+      top: 17%;
       right: 40px;
     }
   }
@@ -127,6 +127,11 @@
       @media #{$lg,$xs} {
         margin-right: 18px;
         margin-left: 18px;
+      }
+      & .rt__section-title{
+        @media #{$xs} {
+          margin-bottom: 100px;
+        }
       }
     }
   }

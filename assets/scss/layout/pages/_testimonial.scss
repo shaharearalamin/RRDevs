@@ -4,7 +4,7 @@
     &-slider{
         margin-right: -100px;
         border-radius: 20px;
-        @media #{$lg,$md,$sm} {
+        @media #{$lg,$md,$sm,$xs} {
           margin-right: 0px;
         // border-radius: 20px;
         }
@@ -19,6 +19,9 @@
     @media #{$md,$sm} {
       padding: 20px;
     }
+    @media #{$xs} {
+      padding: 10px;
+    }
     & > p {
       font-size: 30px;
       color: var(--rt-primary-color);
@@ -28,6 +31,9 @@
       }
       @media #{$sm} {
         font-size: 22px;
+      }
+      @media #{$xs} {
+        font-size: 20px;
       }
     }
   }
@@ -64,6 +70,9 @@
       bottom: 30px;
       right: 20px;
       z-index: 99;
+    }
+    @media #{$xs} {
+      visibility: hidden;
     }
   }
   &-img {

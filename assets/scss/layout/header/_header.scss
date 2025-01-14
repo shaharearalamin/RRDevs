@@ -3,7 +3,7 @@
 .rt-header {
   &-logo {
     padding-left: 24px;
-    @media #{$xl} {
+    @media #{$xl,$xs} {
       padding-left: 0px;
     }
   }

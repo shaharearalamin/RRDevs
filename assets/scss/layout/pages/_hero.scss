@@ -42,7 +42,7 @@
       padding-top: 130px;
       padding-bottom: 100px;
     }
-    @media #{$sm} {
+    @media #{$sm,$xs} {
       padding-top: 80px;
       padding-bottom: 80px;
     }
@@ -59,11 +59,12 @@
       @media #{$md} {
         font-size: 60px;
       }
-      @media #{$sm} {
+      @media #{$sm,$xs} {
         font-size: 45px;
       }
+      
       & br {
-        @media #{$xl,$lg,$md,$sm} {
+        @media #{$xl,$lg,$md,$sm,$xs} {
           display: none;
         }
       }
@@ -79,6 +80,11 @@
       padding-top: 20px;
       animation: textanimation 1s ease-in-out;
       animation-delay: 1.3s;
+      & br {
+        @media #{$xs} {
+          display: none;
+        }
+      }
     }
     & button {
       animation: textanimation 1s ease-in-out;

@@ -6,7 +6,7 @@
     & .swiper-slide {
       width: auto;
       padding: 0px 78px;
-      @media #{$sm} {
+      @media #{$sm,$xs} {
         width: auto;
       padding: 0px 58px;
       }
@@ -19,7 +19,7 @@
 }
 .rt-branding-area {
   margin-bottom: 112px;
-  @media #{$sm} {
+  @media #{$sm,$xs} {
     margin-bottom: 80px;
   }
 }

@@ -15,11 +15,11 @@
     @media #{$md} {
       font-size: 40px;
     }
-    @media #{$sm} {
+    @media #{$sm,$xs} {
       font-size: 30px;
     }
     &  br {
-      @media #{$sm} {
+      @media #{$sm,$xs} {
         display: none;
       }
     }

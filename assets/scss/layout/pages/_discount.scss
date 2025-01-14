@@ -11,7 +11,7 @@
       padding-top: 80px;
       padding-bottom: 280px;
     }
-    @media #{$sm} {
+    @media #{$sm,$xs} {
       padding-top: 40px;
       padding-bottom: 280px;
     }

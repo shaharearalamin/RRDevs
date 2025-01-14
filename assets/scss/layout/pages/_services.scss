@@ -13,6 +13,11 @@
   }
   &-content {
     position: relative;
+    & .rt__section-title{
+      @media #{$xs} {
+        padding-bottom: 60px;
+      }
+    }
   }
   &-slide {
     display: flex;
@@ -24,6 +29,9 @@
     border: 1px solid rgb(239, 239, 239);
     @include d-transition;
     @media #{$md} {
+     padding: 30px;
+    }
+    @media #{$xs} {
      padding: 30px;
     }
     &:hover {
@@ -69,7 +77,7 @@
     @media #{$sm} {
       top: 19%;
       bottom: inherit;
-      right: 20px;;
+      right: 20px;
     }
   }
 }

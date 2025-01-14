@@ -7,7 +7,7 @@
   &-card {
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
     background: #fff;
-    @media #{$lg,$md} {
+    @media #{$lg,$md,$xs} {
       flex-wrap: wrap;
       padding: 20px;
     }
@@ -28,7 +28,7 @@
       place-items: center;
       border-radius: 20px;
       position: relative;
-      @media #{$lg,$md} {
+      @media #{$lg,$md,$xs} {
         width: 100%;
       }
       & h2 {
