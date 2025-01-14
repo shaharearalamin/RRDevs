@@ -303,6 +303,32 @@
     });
   });
 
+  // code for navbar offcanvas
+$(function () {
+  $(".offcanvasDropdown a").click(function (event) {
+    var submenu = $(this).next(".submenu");
+    submenu.toggleClass("show");
+
+    // Specific icon toggle
+    $(this).find(".submenuicon").toggleClass("show2");
+    event.stopPropagation();
+  });
+
+  $(document).click(function (event) {
+    if (!$(event.target).closest(".offcanvasDropdown").length) {
+      $(".submenu").removeClass("show");
+      $(".submenuicon").removeClass("show2"); // Close all icons
+    }
+  });
+
+  $(".offcanvasDropdown").click(function (event) {
+    event.stopPropagation();
+  });
+});
+
+// code for navbar offcanvas
+
+
   // counters about and fact
   const createOdometer = (el, value) => {
     const odometer = new Odometer({
@@ -337,4 +363,6 @@
   createOdometer(projectsOdometer1, 300);
   const projectsOdometer2 = document.querySelector(".projects-odometer2");
   createOdometer(projectsOdometer2, 600);
-})(jQuery);
+})
+
+(jQuery);

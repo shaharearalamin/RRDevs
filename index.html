@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
    
   </head>
+ 
   <body>
 
     <!-- header start  -->
@@ -118,17 +119,145 @@
 
                   <!-- offcanvas  -->
                    <div class="rt__nav-offcanvas d-block d-xl-none ">
-                      <button class="fs-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fal fa-bars"></i></button>
+            <!-- offcanvas start  -->
+            <div id="offcanvasParent">
+              <div class="offcanvas offcanvas-end" id="demo">
+                <div class="offcanvas-header">
+                  <a href="index.html" class="rt-header-logo">
+                    <span>
+                      <img
+                        src="./assets/img/logo/routext-main-logo.png"
+                        alt="header-logo"
+                      />
+                    </span>
+                  </a>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                  ></button>
+                </div>
+                <div class="offcanvasBody">
+                  <div class="offcanvass">
+                    <ul>
+                      <li class="offcanvasDropdown">
+                        <a class="offcanvasDropContent" href="#">
+                          <span> Home </span>
+                          <span
+                            ><i class="far fa-chevron-down submenuicon"></i>
+                          </span>
+                        </a>
+                        <ul class="submenu">
+                          <li><a href="#">Home 01</a></li>
+                          <li><a href="#">Home 02</a></li>
+                          <li><a href="#">Home 03</a></li>
+                          <li><a href="#">Home 04</a></li>
+                          <li><a href="#">Home 05</a></li>
+                        </ul>
+                      </li>
 
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                  <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Offcanvas heading </h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      <li><a href="#">About Us</a></li>
+                      <!--  -->
+                      <li class="offcanvasDropdown">
+                        <a class="offcanvasDropContent" href="#">
+                          <span> Story </span>
+                          <span
+                            ><i class="far fa-chevron-down submenuicon"></i>
+                          </span>
+                        </a>
+                        <ul class="submenu">
+                          <li><a href="#">Story</a></li>
+                          <li><a href="#">Story Details</a></li>
+                        </ul>
+                      </li>
+                      <!--  -->
+                      <!--  -->
+                      <li class="offcanvasDropdown">
+                        <a class="offcanvasDropContent" href="#">
+                          <span> Visa </span>
+                          <span
+                            ><i class="far fa-chevron-down submenuicon"></i>
+                          </span>
+                        </a>
+                        <ul class="submenu">
+                          <li><a href="#">Visa</a></li>
+                          <li><a href="#">Visa Details</a></li>
+                        </ul>
+                      </li>
+                      <!--  -->
+                      <!--  -->
+                      <li class="offcanvasDropdown">
+                        <a class="offcanvasDropContent" href="#">
+                          <span> Blog </span>
+                          <span
+                            ><i class="far fa-chevron-down submenuicon"></i>
+                          </span>
+                        </a>
+                        <ul class="submenu">
+                          <li><a href="#">Blog  Grid</a></li>
+                          <li><a href="#">Blog Details</a></li>
+                        </ul>
+                      </li>
+                      <!--  -->
+                      <!--  -->
+                      <li class="offcanvasDropdown">
+                        <a class="offcanvasDropContent" href="#">
+                          <span> Page </span>
+                          <span
+                            ><i class="far fa-chevron-down submenuicon"></i>
+                          </span>
+                        </a>
+                        <ul class="submenu">
+                          <li><a href="#">Visa-Offers</a></li>
+                          <li><a href="#">Gallery</a></li>
+                          <li><a href="#">Pricing</a></li>
+                          <li><a href="#">Coaching</a></li>
+                          <li><a href="#">Coaching Details</a></li>
+                          <li><a href="#">Countries </a></li>
+                          <li><a href="#">Countries Details</a></li>
+                          <li><a href="#">Team </a></li>
+                          <li><a href="#">Team Details</a></li>
+                          <li><a href="#">Faq </a></li>
+                          <li><a href="#">404 Page </a></li>
+                        </ul>
+                      </li>
+                      <!--  -->
+
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3 mt-4 d-md-none">
+                      <div class="rt-header-icon ">
+                        <span>
+                          <img
+                            src="./assets/img/icon/home-1/home-1-header-msg-icon.png"
+                            alt="msg-icon"
+                          />
+                        </span>
+                      </div>
+                      <div class="rt-header-icon-text ">
+                        <p>Need help?</p>
+                        <h5><a href="#">(307) 555-0133</a></h5>
+                      </div>
+                    </div>
                   </div>
-                  <div class="offcanvas-body">
-                    ... body content here 
-                  </div>
-                  </div>
+                </div>
+              </div>
+              <div class="container-fluid p-0">
+                <a
+                  href="#"
+                  id="toggleBtn"
+                  class=""
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#demo"
+                >
+                  <!-- burger bars  -->
+                  <i class="fal fa-bars text-secondary-color fs-2"></i>
+                  <!-- burger bars  -->
+                </a>
+              </div>
+            </div>
+            <!-- offcanvas end -->
+             
                    </div>
                   <!-- offcanvas  -->
                 </div>
@@ -147,6 +276,13 @@
 
     <!-- back to top btn -->
   <div id="scrollBtn">0%</div>
+
+  <!-- preloder  -->
+  <div class="preloader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
   
     <!-- end  mouse cursor and back to top btn  -->
 

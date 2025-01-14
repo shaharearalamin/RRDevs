@@ -92,6 +92,9 @@
 .text-primary-color {
   color: var(--rt-primary-color);
 }
+.text-secondary-color {
+  color: var(--rt-secondary-color);
+}
 .bg-primary-color {
   background-color: var(--rt-primary-color);
 }
@@ -100,6 +103,9 @@
 }
 .bg-secondary-color-50 {
   background-color: var(--rt-secondary-color-50);
+}
+.bg-offcanvas-color {
+  background-color: var(--rt-offcanvas-bg-color);
 }
 
 .tp-slide-transtion {

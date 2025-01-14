@@ -130,6 +130,7 @@
   --rt-secondary-color-50: #f1f5eb;
   --rt-heading-color: #034833;
   --rt-paragraph-color: #727272;
+  --rt-offcanvas-bg-color: #0E0A24;
   --rt-theme-nblue: #001C52;
   --rt-common-black: #0A0E19;
   --rt-black: black;
@@ -602,6 +603,10 @@ textarea {
   color: var(--rt-primary-color);
 }
 
+.text-secondary-color {
+  color: var(--rt-secondary-color);
+}
+
 .bg-primary-color {
   background-color: var(--rt-primary-color);
 }
@@ -612,6 +617,10 @@ textarea {
 
 .bg-secondary-color-50 {
   background-color: var(--rt-secondary-color-50);
+}
+
+.bg-offcanvas-color {
+  background-color: var(--rt-offcanvas-bg-color);
 }
 
 .tp-slide-transtion {
@@ -8980,6 +8989,135 @@ textarea {
   margin: 0;
 }
 
+/* --------------------------------------------------------------- */
+#offcanvasParent .offcanvas {
+  padding: 15px !important;
+}
+
+.offcanvas .offcanvas-header {
+  padding: 0px 15px !important;
+}
+
+#offcanvasParent {
+  display: grid;
+  place-items: center !important;
+}
+
+#offcanvasParent #toggleBtn {
+  border-radius: 6px;
+  display: none;
+}
+
+.offcanvas-header h2 {
+  color: var(--Text-Main, #131414);
+  text-align: center;
+  font-family: Gilroy-Bold;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 76.8px */
+}
+
+.offcanvass {
+  margin-top: 30px;
+}
+
+.offcanvass ul li {
+  /* border: 1px solid #000; */
+  border-bottom: 1px solid #c5c5c5;
+  text-transform: capitalize;
+  list-style-type: none;
+}
+
+.offcanvass ul li a {
+  width: 100% !important;
+  display: block;
+  padding: 10px;
+}
+
+.submenu li {
+  /* background: rgba(222, 222, 222, 0.5); */
+  margin: 0px 0px 0px 20px;
+  font-size: 14px;
+}
+
+.submenu li:last-child {
+  /* background: rgba(222, 222, 222, 0.5); */
+  margin: 0px 0px 0px 20px;
+  font-size: 14px;
+  border-bottom: none !important;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out; /* Smooth transition */
+}
+
+.submenu.show {
+  max-height: 1000px; /* Adjust this if needed */
+}
+
+.show2 {
+  transform: rotate(180deg);
+  transition: max-height 0.4s ease-in-out; /* Smooth transition */
+}
+
+.offcanvasDropdown a {
+  width: 100%;
+  display: block;
+  /* background: red; */
+}
+
+.offcanvasDropContent {
+  display: flex !important;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.offcanvasBtn button {
+  background-color: var(--primary-color) !important;
+  border-radius: 24px !important;
+  height: 40px !important;
+}
+.offcanvasBtn button:hover {
+  color: white !important;
+}
+
+.offcanvasBtn button:nth-child(2) span {
+  width: 25px !important;
+  height: 25px;
+  border-radius: 50%;
+  background: white;
+  display: block;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.offcanvasBtn button:nth-child(2) {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+@media screen and (max-width: 1199px) {
+  #offcanvasParent #toggleBtn {
+    display: block;
+  }
+  .navbarBtn {
+    display: none !important;
+  }
+  .listItem {
+    display: none;
+  }
+}
+/* --------------------------------------------------------------- */
 .rt__hero-slider .swiper-wrapper .swiper-slide {
   width: 100%;
   height: auto;
